@@ -1,0 +1,302 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans';
+}
+
+section{
+  width: 100%;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* NAVBAR Start */
+#section-navbar{
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #303030;
+  z-index: 10;
+}
+.navbar{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.navbar-item{
+  text-decoration: none;
+  padding: 20px 30px;
+  color: #ffffff;
+  font-weight: 300;
+}
+.navbar-item:hover{
+  text-decoration: underline;
+}
+/* NAVBAR End */
+
+
+/* LANDING Start */
+#section-landing{
+  max-width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.5)), url(pexels-supakakul-sanguansuk-13295150.jpg);
+  background-size: cover;
+}
+#section-landing .container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-main{
+  text-align: center;
+  color: white;
+}
+.landing-greeting-text{
+  font-size: 2rem;
+}
+.landing-introduction-text{
+  font-size: 5rem;
+  font-weight: 200;
+  margin: 20px 0;
+}
+.landing-introduction-text > span{
+  font-weight: 700;
+}
+.landing-description-text{
+  font-size: 0.8rem;
+}
+.landing-button{
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px 30px;
+  background-color: white;
+  text-decoration: none;
+  color: #303030;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 30px;
+}
+.landing-button:hover{
+  background-color: rgb(203, 203, 203);
+}
+/* LANDING End */
+
+/* ABOUT Start */
+#section-about{
+  /* background-color: salmon; */
+  margin-top: 60px;
+  min-height: 80vh;
+}
+.about-main{
+  display: flex;
+}
+.about-left{
+  padding: 40px 0;
+}
+.about-img{
+  height: 80%;
+  /* box-shadow: 15px 15px 0 #303030; */
+  box-shadow: 15px 15px 0 rgb(255, 194, 39);
+  transition: .3s ease-in-out;
+  height: 450px;
+
+}
+.about-img:hover{
+  box-shadow: -15px -15px 0 rgb(255, 223, 39);
+}
+.about-right{
+  padding: 60px 70px;
+}
+.about-greeting{
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #303030;
+}
+.about-name{
+  font-weight: 800;
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #303030;
+}
+.about-paragraph{
+  margin: 20px 0;
+  line-height: 25px;
+  color: #4b4b4b;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.about-line{
+  margin: 30px 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+table tr td{
+  padding-bottom: 10px
+}
+.contact-item{
+  font-weight: 600;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-size: 0.8rem;
+}
+.contact-value{
+  color: rgb(65, 65, 65);
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+.about-btn{
+  display: inline-block;
+  font-size: 0.8rem;
+  border-radius:30px;
+  margin: 20px 0;
+  padding: 12px 30px;
+  background-color: #303030;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  transition: .2s;
+}
+.about-btn:hover{
+  /* background-color: #000000; */
+  box-shadow: 0 0 15px rgba(0,0,0,.8);
+}
+.about-btn i{
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+/* ABOUT End */
+
+/* SKLLL Start */
+#section-other-info{
+  min-height: 80vh;
+  background-color: rgb(231, 231, 231);
+  padding-bottom: 50px;  
+}
+.other-info-main{
+  display: flex;
+  justify-content: space-between;
+}
+.other-info-title-main{
+  margin: 50px 0;
+  font-size: 2rem;
+  color: #303030;
+}
+.other-info-left{
+  width: 40%;
+}
+.other-info-group{
+  margin: 30px 0;
+}
+.other-info-text{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.other-info-title, .other-info-percentage{
+  font-size: 1rem;
+}
+.other-info-bar{
+  width: 100%;
+  height: 7px;
+  background-color: rgb(183, 183, 183);
+  margin-bottom: 50px;
+}
+.other-info-bar-inner{
+  width: 60%;
+  height: 100%;
+  background-color: #303030;
+  border-radius: 0 20px 20px 0;
+}
+.other-info-right{
+  width: 40%;
+}
+.education-card{
+  position: relative;
+  padding: 20px 20px 40px 40px;
+  background-color: rgb(250, 250, 250);
+  border-left: 3px solid black;
+}
+.education-major{
+  color: rgb(43, 43, 43);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.education-place{
+  font-weight: 400;
+  color: rgb(75, 75, 75);
+  margin-top: 5px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.education-place span{
+  font-weight: 700;
+  color: rgb(75, 75, 75);
+  
+}
+.education-paragraph{
+  line-height: 25px;
+  font-size: 0.8rem;
+  color: rgb(80, 80, 80);
+  text-align: justify;
+}
+.education-circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #303030;
+  position: absolute;
+  top: 15%;
+  left: -10px;
+}
+/* SKLLL End */
+
+
+
+
+/* INTEREST Start */
+#section-interest{
+  min-height: 50vh;
+  padding: 40px 0;
+}
+.interest-title{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #303030;
+}
+.interest-card-group{
+  display: flex;
+  justify-content: space-evenly;
+}
+.interest-card{
+  max-width: 20vw;
+  padding: 20px 30px;
+  border: 2px solid rgb(213, 213, 213);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .15s ease-in-out;
+}
+.interest-card:hover{
+  box-shadow: 0 0 30px rgba(0,0,0,.3);
+}
+.interest-card i{
+  font-size: 2.5rem;
+  color: rgb(74, 74, 74);
+}
+.interest-card-title{
+  margin: 10px 0;
+  color: #303030;
+}
+.interest-paragraph{
+  color: rgb(94, 94, 94);
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+/* INTEREST End */
